@@ -21,7 +21,7 @@ const users={
 
 
 app.get('/user',(req,res)=>{
-    const username=req.query.user;
+    const username=req.query.users;
 
     if(!username){
         return res.status(400).json({message:"user parameter cannot be empty"})
